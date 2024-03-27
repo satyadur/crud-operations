@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="main-container">
+        <!-- input record -->
+        <div class="record-input">
+            <h2>Contact Details</h2>
+            <div class="entry_form">
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="" id="name">
+<!-- <br> -->
+                    <label for="address">Address</label>
+                    <input type="text" name="" id="address">
+<!-- <br> -->
+                    <label for="contact-num">Contact Number</label>
+                    <input type="text" name="" id="contact-num">
+                </form>
+
+                <!-- alert message -->
+                <span class="message"></span>
+
+                <div class="input-btns">
+                    <button type="submit" id="submit-btn">
+                        <span>
+                            <i class='bx bx-plus'></i>
+                        </span>Add Contact
+                    </button>
+
+                    <button type="button" id="cancel-btn">
+                        <span>
+                            <i class='bx bx-x'></i>
+                        </span>Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- display record -->
+
+        <div class="record-display">
+            <h2>Available Contacts:</h2>
+            <!-- reset btn -->
+            <button type="button" id="reset-btn">Reset</button>
+
+            <div class="record-container">
+                <!-- single record -->
+                <!--
+                <div class="record-item">
+                    <div class="record-el">
+                        <span id="labelling">Contact ID: </span>
+                        <span id="contact-id-content">1</span>
+                    </div>
+
+                    <div class="record-el">
+                        <span id="labelling">Name: </span>
+                        <span id="name-content">John Doe</span>
+                    </div>
+
+                    <div class="record-el">
+                        <span id="labelling">Address: </span>
+                        <span id="address-content">Amalapuram</span>
+                    </div>
+
+                    <div class="record-el">
+                        <span id="labelling">Contact Number: </span>
+                        <span id="contact-num-content">8008432612</span>
+                    </div>
+
+                    <button type="button" id="delete-btn">
+                        <span>
+                            <i class='bx bxs-trash'></i>
+                        </span>Delete
+                    </button>
+                </div>
+                -->
+                <!-- end of single record -->
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

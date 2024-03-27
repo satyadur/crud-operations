@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+.main-container{
+    margin: 0px auto;
+    padding: 25px;
+    border-radius: 5px;
+}
+.record-input,.record-display{
+    border-radius: 10px;
+    padding: 20px 0;
+    margin: 30px 0;
+    box-sizing: 0px 0px 6px 0px rgba(8,0,8,1);
+   -webkit-box-shadow:0px 0px 6px 0px rgba(8,0,8,1);
+   -moz-box-shadow:0px 0px 6px 0px rgba(8,0,8,1);
+}
+.record-input>h2, .record-display>h2{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 22px;
+}
+.record-input{
+    color: #000;
+    background-color: #f0f0f0;
+}
+.record-display{
+    background-color: #e52165;
+    color: #fff;
+    position: relative;
+}
+
+/* record input */
+.entry-form{
+    padding: 10px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+}
+form label{
+    font-weight: 500;
+    opacity: 0.7;
+}
+form label,form input{
+    display: block;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+}
+form input[type="text"],form input[type="number"]{
+    color: #000;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px 18px;
+    margin: 12px 0;
+    transition: all 0.5s ease;
+}
+form input:focus{
+    background: #252525;
+    color: #fff;
+}
+
+.message{
+    place-content: center;
+    display: flex;
+    width: 50%;
+    margin: 10px auto;
+    font-size: 14px;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 0;
+    visibility: hidden;
+}
+
+/* alert types */
+.error{
+    background-color: #f32013;
+    visibility: visible;
+}
+.success{
+    background-color: #4bb543;
+    visibility: visible !important;
+}
+
+/******************************************************************/
+.input-btns{
+    text-align: center;
+}
+
+/*** utility button styling ***/
+button{
+    display: block;
+    width: 160px;
+    margin: 20px auto;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    padding: 10px;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    background: #000411;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+#submit-btn span, #cancel-btn span{
+    padding-right: 5px;
+}
+
+#reset-btn{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    width: 120px;
+}
+
+/*********************************************************************/
+.record-display{
+    padding: 30px 40px;
+}
+.record-el{
+    display: block;
+    padding: 4px 0;
+    text-align: center;
+    opacity: 0.9;
+}
+
+#labelling{
+    font-weight: 700;
+}
+.record-item{
+    color: #000;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin: 15px 0;
+    background: #fff;
+    box-shadow: 0 0 6px #777;
+}
+
+#delete-btn span{
+    padding-right: 5px;
+}
+
+/************Media Queries***********/
+
+@media screen and (min-width: 992px) {
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 90vw;
+        grid-column-gap: 30px;
+    }
+    .record-input{
+        height: 700px;
+    }
+    .record-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
